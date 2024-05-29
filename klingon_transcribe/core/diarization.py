@@ -1,4 +1,4 @@
-from nemo.collections.asr.models import EncDecSpeakerDiarizationModel
+from nemo.collections.asr.models import ClusteringDiarizer as EncDecSpeakerDiarizationModel
 
 def diarize(audio_path, model_name="speakerdiar_telephony"):
     """Perform speaker diarization on the audio."""
