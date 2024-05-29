@@ -1,6 +1,6 @@
 boto3
 click
-Cython
+cython
 fastapi
 flake8
 hydra-core
@@ -10,6 +10,8 @@ numba
 numpy
 pandas
 pdoc
+onnx
+protobuf
 pytest>=7.2.0
 python-dotenv
 pytorch-lightning>=1.6.0
@@ -18,3 +20,5 @@ torch
 torchaudio
 torchvision
 uvicorn
+youtokentome
+einops
