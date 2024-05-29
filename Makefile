@@ -1,11 +1,5 @@
 install:
-	pip install pip-tools
-	pip-compile requirements.in
-	pip-sync
-
-test:
-	pip-sync
-	pytest
+	pip install -r requirements.txt
 
 test:
 	pytest
@@ -24,3 +18,6 @@ build:
 
 docs:
 	pdoc --html --output-dir docs klingon_transcribe
+
+run:
+	uvicorn klingon_transcribe.server:app --host 0.0.0.0 --port 8000 --reload
