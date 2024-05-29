@@ -10,12 +10,13 @@ setup(
         'uvicorn',
         'boto3',
         'requests',
-        'nemo_toolkit',
+        'nemo_toolkit[all]',
         'pdoc',
         'pytest',
         'flake8',
         'python-dotenv',
-        'protobuf<=3.20.1'
+        'protobuf<=3.20.2',
+        'onnx==1.16.1'
     ],
     entry_points={
         'console_scripts': [
