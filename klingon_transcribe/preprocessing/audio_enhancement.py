@@ -1,4 +1,4 @@
-from nemo.collections.tts.models import AudioEnhancerModel
+from nemo.collections.asr.models import AudioEnhancerModel
 
 def enhance_audio(audio_path, model_name="AudioSuperRes"):
     """Enhance audio using the specified model."""
