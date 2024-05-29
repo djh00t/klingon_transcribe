@@ -5,7 +5,7 @@ fastapi
 flake8
 hydra-core
 librosa
-nemo_toolkit[asr]>=1.21.0
+nemo_toolkit[all]==1.23.0
 numba
 numpy
 pandas
