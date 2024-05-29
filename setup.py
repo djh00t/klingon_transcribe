@@ -14,7 +14,8 @@ setup(
         'pdoc',
         'pytest',
         'flake8',
-        'python-dotenv'
+        'python-dotenv',
+        'protobuf<=3.20.1'
     ],
     entry_points={
         'console_scripts': [
