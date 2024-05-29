@@ -1,0 +1,10 @@
+click
+fastapi
+uvicorn
+boto3
+requests
+nemo_toolkit
+pdoc
+pytest
+flake8
+python-dotenv
