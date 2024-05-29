@@ -24,3 +24,6 @@ build:
 
 docs:
 	pdoc --html --output-dir docs klingon_transcribe
+
+run:
+	uvicorn klingon_transcribe.server:app --host 0.0.0.0 --port 8000 --reload
