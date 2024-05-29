@@ -1,3 +1,7 @@
 __pycache__/
 *.pyc
 .env
+.aider**
+scripts/**
+push
+setup_env.py
