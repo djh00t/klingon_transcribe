@@ -5,10 +5,11 @@ boto3
 requests
 hydra-core
 nemo_toolkit>=1.6.0
+hydra-core
+nemo_toolkit>=1.6.0
 pdoc
 pytest>=7.2.0
-#starlette>=0.36.2
 flake8
 python-dotenv
 pytorch-lightning>=1.6.0
-# python-multipart>=0.36.2
+pandas
