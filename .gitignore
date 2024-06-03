@@ -1,3 +1,30 @@
+# git specific
+.git/
+.gitignore
+
+# Age Encryption
+**age.agekey
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Bash specific
+*.sh~
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -140,3 +167,8 @@ cython_debug/
 scripts/**
 push
 setup_env.py
+# Ignore wav files
+**.wav
+# Except these ones which are used for testing
+!test_pcm.wav
+!test.wav
