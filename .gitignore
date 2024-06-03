@@ -172,3 +172,6 @@ setup_env.py
 # Except these ones which are used for testing
 !test_pcm.wav
 !test.wav
+
+# Ignore notebook working files
+notebooks/diarize/data
