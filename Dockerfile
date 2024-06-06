@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the required version of libstdc++
-RUN apt-get update && apt-get install -y libstdc++6
+# RUN apt-get update && apt-get install -y libstdc++6
 
 RUN pip install -r requirements.txt
 

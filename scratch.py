@@ -1,0 +1,1 @@
+{'segments': [{'text': ' Just for the sake of isolating my machine and agapping it rather than trying to connect it to the network and then just jump into it, am I able to get you to take me out to a fun shake over at the training camp?', 'start': 2.21, 'end': 29.155}, {'text': ' Thank you.', 'start': 29.155, 'end': 43.78}], 'language': 'en'}

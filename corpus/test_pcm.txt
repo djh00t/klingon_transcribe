@@ -1,0 +1,18 @@
+[00:02.36 - 00:04.15] speaker_0: Kestrel IT Charles speaking
+[00:04.79 - 00:05.75] speaker_1: Yeah Charles how are ya?
+[00:07.11 - 00:08.03] speaker_0: Hey how can I help?
+[00:08.59 - 00:15.31] speaker_1: Yeah <unintelligible> here from Kestrel mate, I just opened up my computer and it just says there's viruses detected so I thought I would give you a call before I go further
+[00:17.11 - 00:21.91] speaker_0: Viruses detected! Umm all right well what exactly is the message popping up
+[00:XX.XX - 00:XX.XX] speaker_1: Oh mate it says Trojan virus detected
+[00:XX.XX - 00:XX.XX] speaker_0: Yeah?
+[00:XX.XX - 00:XX.XX] speaker_1: Yeah
+[00:30.19 - 00:33.95] speaker_0: Uh no worries ah okay um where are you currently?
+[00:34.07 - 00:36.47] speaker_1: I'm at work, at Kestrel
+[00:37.95 - 00:39.15] speaker_0: yeah ahh north or south?
+[00:40.27 - 00:40.51] speaker_1: South
+[00:42.75 - 00:56.79] speaker_0: all right um just um for the sake of like isolating that machine and air gaping it rather than like trying to connect it to the network and then just jump into it am i able to get you to take that to a Irfan Sheikh over at the training hut?
+[00:59.07 - 00:59.91] speaker_1: Yeah I have meetings but ok righto no worries mate
+[01:02.63 - 01:17.87] speaker_0: Umm it is just the best rather than like just connecting it to the network and seeing because like a sort of message like that it is popping up from the anti virus so like you don't really want to connect to the corporate network where you've got printers servers etc you know it would be better to
+[01:18.07 - 01:XX.XX] speaker_1: oh that's all right yeah well i'll see what i can do
+[01:21.XX - 01:XX.XX] speaker_0: all cheers thank you
+[01:XX.XX - 01:XX.XX] speaker_1: yeah sure yep thank you

@@ -1,16 +1,18 @@
-boto3
+klingon-file-manager
 click
 cython
 fastapi
 flake8
 hydra-core
+ipython>=8.18.1
 librosa
-nemo_toolkit[all]==1.23.0
+nemo_toolkit[all]
 numba
 numpy
 pandas
 pdoc
 onnx
+pip-tools
 protobuf
 pytest>=7.2.0
 python-dotenv
@@ -22,3 +24,11 @@ torchvision
 uvicorn
 youtokentome
 einops
+pydantic
+typing-extensions
+git+https://github.com/adefossez/demucs#egg=demucs
+python-magic
+webrtcvad
+
+
+### apt-get install soundstretch
