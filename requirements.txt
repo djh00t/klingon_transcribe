@@ -6,7 +6,9 @@
 #
 absl-py==2.1.0
     # via tensorboard
-aiohttp==3.9.5
+aiohappyeyeballs==2.3.5
+    # via aiohttp
+aiohttp==3.10.2
     # via
     #   datasets
     #   fsspec
@@ -40,11 +42,11 @@ braceexpand==0.1.7
     # via
     #   nemo-toolkit
     #   webdataset
-certifi==2024.7.4
+certifi==2024.2.2
     # via
     #   requests
     #   sentry-sdk
-cffi==1.16.0
+cffi==1.17.0
     # via soundfile
 charset-normalizer==2.0.12
     # via requests
@@ -64,7 +66,7 @@ contourpy==1.2.1
     # via matplotlib
 cycler==0.12.1
     # via matplotlib
-cython==3.0.10
+cython==3.0.11
     # via -r requirements.in
 cytoolz==0.12.3
     # via lhotse
@@ -180,7 +182,7 @@ lazy-loader==0.4
     # via librosa
 levenshtein==0.22.0
     # via texterrors
-lhotse==1.24.2
+lhotse==1.26.0
     # via nemo-toolkit
 librosa==0.10.2.post1
     # via
@@ -207,7 +209,7 @@ markupsafe==2.1.5
     #   werkzeug
 marshmallow==3.21.3
     # via nemo-toolkit
-matplotlib==3.9.1
+matplotlib==3.9.1.post1
     # via
     #   nemo-toolkit
     #   pyannote-metrics
@@ -217,7 +219,7 @@ mccabe==0.6.1
     # via flake8
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.3.0
+more-itertools==10.4.0
     # via inflect
 mpmath==1.3.0
     # via sympy
@@ -366,7 +368,7 @@ psutil==6.0.0
     # via wandb
 ptyprocess==0.7.0
     # via pexpect
-pure-eval==0.2.2
+pure-eval==0.2.3
     # via stack-data
 pyannote-core==5.0.0
     # via
@@ -377,7 +379,7 @@ pyannote-database==5.1.0
     # via pyannote-metrics
 pyannote-metrics==3.2.1
     # via nemo-toolkit
-pyarrow==16.1.0
+pyarrow==17.0.0
     # via datasets
 pyarrow-hotfix==0.6
     # via datasets
@@ -434,7 +436,7 @@ rapidfuzz==2.13.7
     # via
     #   jiwer
     #   levenshtein
-regex==2024.5.15
+regex==2024.7.24
     # via
     #   nltk
     #   sacremoses
@@ -460,7 +462,8 @@ s3transfer==0.10.1
     # via boto3
 sacremoses==0.1.1
     # via nemo-toolkit
-safetensors==0.4.3
+safetensors==0.4.4
+
     # via transformers
 scikit-learn==1.5.0
     # via
@@ -477,7 +480,7 @@ scipy==1.13.1
     #   scikit-learn
 sentencepiece==0.2.0
     # via nemo-toolkit
-sentry-sdk==2.7.1
+sentry-sdk==2.12.0
     # via wandb
 setproctitle==1.3.3
     # via wandb
@@ -504,7 +507,7 @@ soundfile==0.12.1
     #   nemo-toolkit
 sox==1.5.0
     # via nemo-toolkit
-soxr==0.3.7
+soxr==0.4.0
     # via librosa
 stack-data==0.6.3
     # via ipython
@@ -566,7 +569,7 @@ traitlets==5.14.3
     #   ipython
     #   ipywidgets
     #   matplotlib-inline
-transformers==4.42.3
+transformers==4.44.0
     # via nemo-toolkit
 triton==2.3.0
     # via
@@ -580,7 +583,6 @@ typing-extensions==4.12.0
     # via
     #   fastapi
     #   huggingface-hub
-    #   inflect
     #   ipython
     #   librosa
     #   lightning-utilities
@@ -601,7 +603,7 @@ urllib3==2.2.2
     #   sentry-sdk
 uvicorn==0.15.0
     # via -r requirements.in
-wandb==0.17.4
+wandb==0.17.6
     # via nemo-toolkit
 wcwidth==0.2.13
     # via prompt-toolkit
