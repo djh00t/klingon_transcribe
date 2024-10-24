@@ -339,7 +339,7 @@ pandas==2.2.2
     #   pyannote-metrics
 parso==0.8.4
     # via jedi
-pdoc==7.0.1
+pdoc==14.5.1
     # via -r requirements.in
 pexpect==4.9.0
     # via ipython
@@ -463,7 +463,6 @@ s3transfer==0.10.1
 sacremoses==0.1.1
     # via nemo-toolkit
 safetensors==0.4.4
-
     # via transformers
 scikit-learn==1.5.0
     # via
