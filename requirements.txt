@@ -480,7 +480,7 @@ scipy==1.13.1
     #   scikit-learn
 sentencepiece==0.2.0
     # via nemo-toolkit
-sentry-sdk==2.12.0
+sentry-sdk==2.8.0
     # via wandb
 setproctitle==1.3.3
     # via wandb
