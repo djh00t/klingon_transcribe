@@ -235,7 +235,7 @@ nemo-toolkit[asr]==1.23.0
     #   nemo-toolkit
 networkx==3.3
     # via torch
-nltk==3.8.1
+nltk==3.9
     # via g2p-en
 numba==0.59.1
     # via
