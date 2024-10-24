@@ -463,6 +463,7 @@ s3transfer==0.10.1
 sacremoses==0.1.1
     # via nemo-toolkit
 safetensors==0.4.4
+
     # via transformers
 scikit-learn==1.5.0
     # via
@@ -595,7 +596,7 @@ typing-extensions==4.12.0
     #   typer
 tzdata==2024.1
     # via pandas
-urllib3==2.2.1
+urllib3==2.2.2
     # via
     #   botocore
     #   requests
