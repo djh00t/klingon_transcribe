@@ -42,7 +42,7 @@ braceexpand==0.1.7
     # via
     #   nemo-toolkit
     #   webdataset
-certifi==2024.2.2
+certifi==2024.7.4
     # via
     #   requests
     #   sentry-sdk
@@ -463,7 +463,6 @@ s3transfer==0.10.1
 sacremoses==0.1.1
     # via nemo-toolkit
 safetensors==0.4.4
-
     # via transformers
 scikit-learn==1.5.0
     # via
