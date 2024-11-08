@@ -608,7 +608,7 @@ wcwidth==0.2.13
     # via prompt-toolkit
 webdataset==0.1.62
     # via nemo-toolkit
-werkzeug==3.0.3
+werkzeug==3.0.6
     # via tensorboard
 wget==3.2
     # via nemo-toolkit
