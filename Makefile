@@ -1,13 +1,11 @@
 install:
+	make clean
 	pip install pip-tools
 	pip-compile requirements.in
 	pip-sync
 
 test:
 	pip-sync
-	pytest
-
-test:
 	pytest
 
 lint:
@@ -18,6 +16,7 @@ clean:
 	rm -rf .pytest_cache
 	rm -rf .mypy_cache
 	rm -rf dist
+	rm -f requirements.txt && touch requirements.txt
 
 build:
 	python setup.py sdist bdist_wheel

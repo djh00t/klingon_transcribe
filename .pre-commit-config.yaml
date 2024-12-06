@@ -1,0 +1,59 @@
+fail_fast: true
+repos:
+  - repo: https://github.com/hhatto/autopep8
+    rev: v2.3.1
+    hooks:
+      - args:
+          - --aggressive
+          - --aggressive
+          - --aggressive
+          - --in-place
+          - --max-line-length=80
+          - --pep8-passes=5
+        id: autopep8
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-ast
+      - id: check-json
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-yaml
+      - exclude: "(?x)^(\n  .*.terraform/.*|\n  tmpl\\/.*.sops\\.ya?ml\n  )$\n"
+        id: end-of-file-fixer
+      - id: mixed-line-ending
+      - args:
+          - --markdown-linebreak-ext=md
+        id: trailing-whitespace
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.1.1
+    hooks:
+      - args:
+          - --config=pyproject.toml
+        id: flake8
+  - repo: https://github.com/djh00t/sops-pre-commit
+    rev: v0.0.2f
+    hooks:
+      - exclude: (tmpl\/.*.sops\.ya?ml|knative\-operator\.ya?ml)
+        id: kubernetes-secret
+      - id: aws-access-key-id
+      - id: aws-secret-access-key
+      - id: rsa-private-key
+      - id: ssh-private-key
+      - id: github-access-token
+      - id: generic-api-key
+      - id: gcp-api-key
+      - id: jwt
+      - id: slack-webhook-url
+      - id: google-oauth-client-secret
+  - repo: local
+    hooks:
+      - id: commit-msg
+        name: Commit Message Validator
+        entry: python klingon_tools/git_commit_validate.py
+        language: system
+        stages: [commit-msg]
