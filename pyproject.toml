@@ -1,0 +1,75 @@
+[build-system]
+requires = ["poetry-core>=1.0.0", "Cython>=3.0.11"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "klingon_transcribe"
+version = "0.0.0"
+description = "Python library for transcribing, diarizing, and enhancing audio files using CLI, Python API or FastAPI"
+authors = ["David Hooton <klingon_transcribe+david@hooton.org>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/djh00t/klingon_transcribe"
+packages = [{ include = "klingon_transcribe" }]
+include = ["README.md", "LICENSE"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+boto3 = "^1.35.47"
+click = "^8.1.7"
+cython = "^3.0.11"
+fastapi = "^0.115.3"
+flake8 = "^7.1.1"
+hydra-core = "^1.3.2"
+librosa = "^0.10.2.post1"
+numba = "^0.60.0"
+numpy = ">=1.22,<2.1"
+pandas = "^2.2.3"
+pdoc = "^15.0.0"
+pytest = ">=7.2.0"
+python-dotenv = "^1.0.1"
+poetry = "^1.8.4"
+
+[tool.poetry.group.dev.dependencies]
+cython = "^3.0.11"
+
+[tool.flake8]
+max-line-length = 80
+verbose = 3
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = ["import-error"]
+
+[tool.pylint.format]
+max-line-length = 80
+
+[tool.yapf]
+based_on_style = "google"
+column_limit = 80
+dedent_closing_brackets = true
+coalesce_brackets = true
+spaces_before_comment = 4
+split_before_logical_operator = true
+
+[tool.yapfignore]
+ignore_patterns = ["temp/**/*.py", "temp2/*.py"]
+
+[tool.mypy]
+exclude = "tmp/"
+
+[tool.pytest.ini_options]
+addopts = "-ra -q"
+testpaths = ["tests"]
+minversion = "8.3.1"
+filterwarnings = ["error", "ignore::DeprecationWarning", 'ignore:open_text is deprecated. Use files() instead.:DeprecationWarning:litellm.utils',]
+markers = ["optional: mark test as optional","dependency: mark test as having dependencies", "ollama_installed: marks tests that require Ollama to be installed", "ollama_server_running: marks tests that require the Ollama server to be running", "depends: marks tests with dependencies on other tests"]
+
+[tool.semantic_release]
+version_variable = ["pyproject.toml:version"]
+version_toml = ["pyproject.toml:tool.poetry.version"]
+version_pattern = ["README.md:version-{version}"]
+major_on_zero = false
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
