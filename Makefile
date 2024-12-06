@@ -7,9 +7,6 @@ test:
 	pip-sync
 	pytest
 
-test:
-	pytest
-
 lint:
 	flake8 klingon_transcribe
 
